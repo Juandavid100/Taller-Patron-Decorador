@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorseCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>🐎 HorseCare</h1>
+            <p>Personaliza el cuidado de tu caballo</p>
+        </header>
+
+        <section class="card">
+            <label for="horse">Nombre del caballo</label>
+            <input id="horse" type="text" placeholder="Ej. Thunder">
+
+            <h2>Servicios adicionales</h2>
+
+            <label class="service">
+                <input type="checkbox" id="premiumFood">
+                <span>🥕 Alimentación premium</span>
+                <strong>$30.000</strong>
+            </label>
+
+            <label class="service">
+                <input type="checkbox" id="bath">
+                <span>🛁 Baño y aseo</span>
+                <strong>$20.000</strong>
+            </label>
+
+            <label class="service">
+                <input type="checkbox" id="training">
+                <span>🏇 Entrenamiento</span>
+                <strong>$50.000</strong>
+            </label>
+
+            <label class="service">
+                <input type="checkbox" id="veterinary">
+                <span>🩺 Chequeo veterinario</span>
+                <strong>$40.000</strong>
+            </label>
+
+            <button id="calculate">Calcular servicio</button>
+        </section>
+
+        <section id="result" class="card result hidden">
+            <h2>Resumen</h2>
+            <p><b>Caballo:</b> <span id="horseName">-</span></p>
+            <p id="description"></p>
+            <h2 id="total">$0</h2>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

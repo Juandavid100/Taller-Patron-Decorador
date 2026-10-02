@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4efe7;
+    color: #2f261f;
+}
+
+.container {
+    width: min(700px, 92%);
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 40px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 25px 1fr auto;
+    gap: 8px;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.result {
+    text-align: center;
+}
+
+#total {
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .service {
+        grid-template-columns: 25px 1fr;
+    }
+
+    .service strong {
+        grid-column: 2;
+    }
+}
